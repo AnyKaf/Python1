@@ -19,6 +19,7 @@ if soucastka in sklad.keys():
     else:
         print(f"Vámi zadaná součástka {soucastka} Vám bude doručena v množství {mnozstvi} ks. Děkujeme za nákup!")
         zbytek = mnozstvi_sklad - mnozstvi
+        sklad[soucastka] = zbytek
         print(f"Na skladě nám zbývá {zbytek} ks")
 else: 
     print("Vámi zadanou součástku nemáme na skladě :(")
